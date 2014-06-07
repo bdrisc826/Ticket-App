@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    
+    <TextView
+       android:id="@+id/sellername"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="32sp">
+    </TextView>
+    <TextView
+       android:id="@+id/buygame"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="32sp">
+    </TextView>
+    <TextView
+       android:id="@+id/sellerlocation"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="32sp">
+    </TextView>
+    <TextView
+       android:id="@+id/highestoffer"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="32sp">
+    </TextView>
+    
+    <EditText
+        android:id="@+id/bidprice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price" />
+    
+    
+    <Button
+	        android:id="@+id/buy"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/buy"
+	        android:background="#0000FF"
+	        android:onClick="buy" />
+    
+</LinearLayout>

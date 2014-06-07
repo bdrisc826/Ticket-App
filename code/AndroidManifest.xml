@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.batmanbegins"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.example.batmanbegins.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.batmanbegins.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.example.batmanbegins.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.batmanbegins" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.batmanbegins.GcmIntentService" />
+
+        <activity
+            android:name="com.example.batmanbegins.SellActivity"
+            android:label="@string/title_activity_sell" >
+        </activity>
+        <activity
+            android:name="com.example.batmanbegins.BuyActivity"
+            android:label="@string/title_activity_buy" >
+        </activity>
+        <activity
+            android:name="com.example.batmanbegins.TicketsActivity"
+            android:label="@string/title_activity_tickets" >
+        </activity>
+        <activity
+            android:name="com.example.batmanbegins.YourOffersActivity"
+            android:label="@string/title_activity_your_offers" >
+        </activity>
+        <activity
+            android:name="com.example.batmanbegins.GamesActivity"
+            android:label="@string/title_activity_games" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Umich Tickets</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sell">SellActivity</string>
+    <string name="title_activity_buy">BuyActivity</string>
+    <string name="title_activity_tickets">TicketsActivity</string>
+    <string name="title_activity_your_offers">YourOffersActivity</string>
+    <string name="button_send">Sell a Ticket</string>
+    <string name="yourtickets">Your Offers</string>
+    <string name="theirtickets">Their Offers</string>
+    <string name="buymoretickets">Main Page</string>
+    <string name="buy">Place a Bid</string>
+    <string name="game">Game</string>
+    <string name="price">Price</string>
+    <string name="location">Location</string>
+    <string name="sell">Sell</string>
+    <string name="aboutthisapp">About This App</string>
+    <string name="games">Select Another Game</string>
+
+    <string-array name="games_array">
+        <item>Appalacian State</item>
+        <item>Miami (Ohio)</item>
+        <item>Utah</item>
+        <item>Minnesota</item>
+        <item>Penn State</item>
+        <item>Indiana</item>
+        <item>Maryland</item>
+    </string-array>
+
+    <string name="title_activity_games">GamesActivity</string>
+
+</resources>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+       
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/location" />
+    
+    <Spinner
+        android:id="@+id/game"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:hint="@string/game" />
+    
+    <Button
+	        android:id="@+id/sell"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/game"
+	        android:text="@string/sell"
+	        android:background="#0000FF"
+	        android:onClick="sell"  />
+    
+    
+    
+</RelativeLayout>
+
